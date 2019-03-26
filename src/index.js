@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Route, NavLink, BrowserRouter as Router } from 'react-router-dom'
+import { Route, NavLink } from 'react-router-dom'
+import { HashRouter } from 'react-router-dom'
 import './index.css';
 import App from './App';
 import Portfolio from './Portfolio';
@@ -10,7 +11,7 @@ import Contact from './Contact';
 import * as serviceWorker from './serviceWorker';
 
 const routing = (
-    <Router>
+    <HashRouter>
       <div>
       <ul className="navigation-bar">
         <li>
@@ -35,7 +36,7 @@ const routing = (
         <Route path="/community" component={Community} />
         <Route path="/contact" component={Contact} />
       </div>
-    </Router>
+    </HashRouter>
   )
 
 ReactDOM.render(routing, document.getElementById('root'));
