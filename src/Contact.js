@@ -14,7 +14,6 @@ class Contact extends Component {
               <input type="email" name="email" placeholder="Email..."/>
               <textarea name="message" placeholder="Message..."></textarea>
               <input type="submit" value="Send"/>
-              <img src="https://www.kroger.com/product/images/medium/front/0004400003202"/>
             </form>
           </header>
         </div>
