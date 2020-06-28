@@ -1,41 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="theme-color" content="#000000" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jared Potter</title>
+    <link
+      rel="stylesheet"
+      href="assets/font-awesome-4.7.0/css/font-awesome.min.css"
+      target="_blank"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+  <body class="container">
+    <header id="header" class="header">
+      <a href="#">
+        <img
+          src="images/profile.jpg"
+          alt="Jared Potter Profile"
+          class="profile-pic"
+        />
+      </a>
+      <h1>
+        <strong>Hello everyone 👨‍💻, I'm Jared Potter</strong>
+        <br />
+        <small
+          >I'm a Software Engineer and Educator in Salt Lake City, Utah,
+          USA</small
+        >
+        <br />
+        <p>HTML5, CSS, and JavaScript</p>
+      </h1>
+    </header>
+    <div id="main" class="main">
+      <section id="one">
+        <h2>Send me a message</h2>
+        <div class="form-and-info">
+          <form
+            action="https://formspree.io/jaredpotter1@gmail.com"
+            method="POST"
+          >
+            <div class="name-and-email">
+              <input type="text" name="name" placeholder="Name" />
+              <input type="text" name="_replyto" placeholder="Email" />
+            </div>
+            <textarea name="message" placeholder="Message" rows="4"></textarea>
+            <button type="submit" class="submit-button">Send</button>
+          </form>
+          <ul>
+            <li>
+              <h3 class="fa fa-home">
+                <span>Salt Lake City, Utah, United States</span>
+              </h3>
+            </li>
+            <li>
+              <h3 class="fa fa-envelope-o">
+                <a
+                  href="mailto:jaredpotter1@gmail.com?Subject=message from jaredpotter.dev"
+                  ><span>jaredpotter1@gmail.com</span></a
+                >
+              </h3>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <footer class="footer">
+      <ul class="social">
+        <li>
+          <a
+            href="https://www.linkedin.com/in/jaredrpotter"
+            class="fa fa-linkedin icon"
+          >
+            <span class="label">
+              Linkedin
+            </span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.github.com/jaredpotter"
+            class="fa fa-github icon"
+          >
+            <span class="label">
+              Github
+            </span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.twitter.com/jaredpotter"
+            class="fa fa-twitter icon"
+          >
+            <span class="label">
+              Twitter
+            </span>
+          </a>
+        </li>
+      </ul>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+      <ul>
+        <li id="copyrightCurrentYear">© jared potter 2020</li>
+      </ul>
+    </footer>
   </body>
+  <script src="index.js"></script>
 </html>
