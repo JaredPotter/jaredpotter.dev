@@ -46,10 +46,32 @@ li {
   border-radius: 50%;
 }
 
+.header h1 div,
+.header h1 nav {
+  margin-bottom: 1.25em;
+}
+
+.header nav a {
+  border-radius: 0.1em;
+  color: white;
+  padding: 0.24em;
+  transition: all 0.3s ease-in-out 0s;
+  border-bottom: 0.01em dotted #df919e;
+}
+
+.header nav a:hover {
+  background-color: #df919e;
+}
+
 .header strong,
 .header small,
+.header nav,
 .header p {
   color: white;
+}
+
+.header p {
+  font-size: 75%;
 }
 
 /* ~~~~~~~~ MAIN ~~~~~~~~ */
@@ -161,6 +183,20 @@ textarea {
   display: none;
 }
 
+.icon {
+  color: #b2b2b2;
+  font-size: 1.2rem;
+}
+
+.form-and-info ul li h3 {
+  display: flex;
+  align-items: center;
+}
+
+.form-and-info ul li h3:before {
+  margin-right: 0.25em;
+}
+
 /* ~~~~~~~~~~~ MOBILE FRIENDLY STYLES ~~~~~~~~~~~~ */
 @media screen and (max-width: 980px) {
   .container {
@@ -213,18 +249,8 @@ textarea {
     text-align: center;
     width: 100%;
   }
-}
 
-.icon {
-  color: #b2b2b2;
-  font-size: 1.2rem;
-}
-
-.form-and-info ul li h3 {
-  display: flex;
-  align-items: center;
-}
-
-.form-and-info ul li h3:before {
-  margin-right: 0.25em;
+  .footer .social {
+    justify-content: center;
+  }
 }
