@@ -206,14 +206,20 @@ textarea {
   }
 
   .header {
-    background-position: top left, center center;
-    background-size: auto, cover;
     left: auto;
     top: auto;
     position: relative;
     width: 100%;
     text-align: center;
     padding: 6em 4em;
+
+    background-attachment: scroll;
+    background-image: url(images/overlay.png), url(images/background.jpg);
+    background-position: center top;
+    background-repeat: repeat, no-repeat;
+    background-size: auto, cover;
+    background-size: cover;
+    background-position: 50% -100px;
   }
 
   .main {
@@ -237,8 +243,8 @@ textarea {
   }
 
   .footer {
-    background-attachment: scroll;
     background-color: #1f1815;
+    background-attachment: scroll;
     background-image: url(images/overlay.png), url(images/background.jpg);
     background-position: center top;
     background-repeat: repeat, no-repeat;
