@@ -1,3 +1,19 @@
+/* RESET */
+figure {
+  display: block;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
+
+blockquote {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
+
 /* latin */
 @font-face {
   font-family: "medium-content-serif-font";
@@ -306,6 +322,11 @@
     U+201E-2021, U+2023-2025, U+2027-10FFFF;
 }
 
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
 article {
   display: flex;
   flex-direction: column;
@@ -313,8 +334,14 @@ article {
   width: 100%;
 }
 
+section {
+  margin: 0 64px;
+  width: 680px;
+}
+
 .full-image {
   width: 100%;
+  /* position: absolute; */
   /* background-size: 100%; */
 }
 
@@ -338,4 +365,122 @@ figcaption {
   margin-top: 10px;
   font-family: medium-content-sans-serif-font;
   color: #757575;
+}
+
+h1 {
+  text-align: left;
+  line-height: 40px;
+  margin-top: 1.95em;
+  font-size: 36px;
+  margin-bottom: -0.28em;
+  letter-spacing: -0.022em;
+  color: #292929;
+  font-weight: 600;
+  font-style: normal;
+  font-family: medium-content-sans-serif-font;
+}
+
+h2 {
+  line-height: 32px;
+  margin-top: 1.72em;
+  font-size: 26px;
+  color: #292929;
+  margin-bottom: -0.31em;
+  letter-spacing: -0.022em;
+  font-weight: 600;
+  font-style: normal;
+  font-family: medium-content-sans-serif-font;
+}
+
+blockquote {
+  margin-left: -20px;
+  padding-left: 23px;
+  box-shadow: inset 3px 0 0 0 rgba(41, 41, 41, 1);
+}
+
+blockquote p {
+  font-style: italic;
+}
+
+p {
+  margin-top: 2em;
+  font-size: 21px;
+  line-height: 32px;
+  margin-bottom: -0.46em;
+  letter-spacing: -0.003em;
+  font-weight: 400;
+  color: #292929;
+  font-family: medium-content-serif-font, Georgia, Cambria, "Times New Roman",
+    Times, serif;
+  word-break: break-word;
+}
+
+p strong {
+  font-weight: 700;
+  font-family: medium-content-serif-font, Georgia, Cambria, "Times New Roman",
+    Times, serif;
+}
+
+p em {
+  font-style: italic;
+  font-weight: 400;
+}
+
+code {
+  font-family: Menlo, Monaco, "Courier New", Courier, monospace;
+  font-size: 75%;
+  padding: 2px 4px;
+  background-color: #e7e7e7;
+  font-weight: 400;
+}
+
+hr {
+  margin-top: 30px;
+  border: none;
+  color: #080808;
+  font-size: 28px;
+  font-family: medium-content-slab-serif-font, Georgia, Cambria,
+    "Times New Roman", Times, serif;
+  text-align: center;
+  font-weight: 300;
+
+  display: block;
+  unicode-bidi: isolate;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  overflow: hidden;
+}
+
+hr:before {
+  content: "...";
+  line-height: 1.4;
+  font-style: italic;
+  text-indent: 0.6em;
+  letter-spacing: 0.6em;
+}
+
+p span {
+  /* leading paragraph */
+  padding-top: 7px;
+  margin-right: 12px;
+  line-height: 0.83;
+  font-size: 66px;
+  float: left;
+  position: relative;
+  display: block;
+  font-family: medium-content-serif-font, Georgia, Cambria, "Times New Roman",
+    Times, serif;
+}
+
+p a {
+  background-position: 0 calc(1em + 1px);
+  background-size: 1px 1px;
+  text-decoration: none;
+  text-decoration: underline;
+  color: inherit;
+  font-family: medium-content-serif-font, Georgia, Cambria, "Times New Roman",
+    Times, serif;
+  -webkit-tap-highlight-color: transparent;
 }
