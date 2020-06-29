@@ -33,7 +33,7 @@ li {
   background-image: url(images/overlay.png), url(images/background.jpg);
   background-size: auto, auto 100%;
   background-repeat: repeat, no-repeat;
-  background-position: center top
+  background-position: center top;
 
   padding: 8em 4em 0 0;
   width: 35%;
