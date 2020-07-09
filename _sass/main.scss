@@ -30,7 +30,8 @@ li {
   height: 100%;
   text-align: right;
   background-attachment: scroll, fixed;
-  background-image: url(images/overlay.png), url(images/background.jpg);
+  background-image: url(/assets/images/overlay.png),
+    url(/assets/images/background.jpg);
   background-size: auto, auto 100%;
   background-repeat: repeat, no-repeat;
 
@@ -213,7 +214,8 @@ textarea {
     padding: 6em 4em;
 
     background-attachment: scroll;
-    background-image: url(images/overlay.png), url(images/background.jpg);
+    background-image: url(/assets/images/overlay.png),
+      url(/assets/images/background.jpg);
     background-position: center top;
     background-repeat: repeat, no-repeat;
     background-size: auto, cover;

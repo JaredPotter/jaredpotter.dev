@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "default.css",
+	"sources": [
+		"default.scss",
+		"_sass/default.scss"
+	],
+	"sourcesContent": [
+		"@import \"default\";\n",
+		"@import url(\"https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic\");\n\n* {\n  font-family: \"Source Sans Pro\", Helvetica, sans-serif;\n  // font-family: medium-marketing-display-font;\n  box-sizing: border-box;\n}\n\nbody {\n  margin: 0 0 0 0;\n  display: flex;\n  flex-direction: column;\n}\n\n.header {\n  background-color: #05767a;\n  height: 7.5em;\n  display: flex;\n}\n\n.header nav {\n  display: flex;\n  align-items: center;\n}\n\n.header nav a {\n  display: flex;\n  align-items: center;\n  text-decoration: none;\n  outline: none;\n  color: white;\n}\n\n.header a {\n  color: white;\n  padding: 0.24em;\n  text-decoration: none;\n  outline: 0;\n  font-size: 2em;\n  margin-left: 2em;\n  border-radius: 0.1em;\n}\n\n.header .link-active {\n  background-color: #df919e;\n}\n\n.profile-pic {\n  width: 10.25em;\n  padding: 2em;\n  border-radius: 50%;\n  font-size: 0.25em;\n}\n"
+	],
+	"names": [],
+	"mappings": "ACAA,OAAO,CAAC,4EAAI;AAEZ,AAAA,CAAC,CAAC,EACA,WAAW,EAAE,wCAAwC,EAErD,UAAU,EAAE,UAAU,GACvB;;AAED,AAAA,IAAI,CAAC,EACH,MAAM,EAAE,OAAO,EACf,OAAO,EAAE,IAAI,EACb,cAAc,EAAE,MAAM,GACvB;;AAED,AAAA,OAAO,CAAC,EACN,gBAAgB,EAAE,OAAO,EACzB,MAAM,EAAE,KAAK,EACb,OAAO,EAAE,IAAI,GACd;;AAED,AAAA,OAAO,CAAC,GAAG,CAAC,EACV,OAAO,EAAE,IAAI,EACb,WAAW,EAAE,MAAM,GACpB;;AAED,AAAA,OAAO,CAAC,GAAG,CAAC,CAAC,CAAC,EACZ,OAAO,EAAE,IAAI,EACb,WAAW,EAAE,MAAM,EACnB,eAAe,EAAE,IAAI,EACrB,OAAO,EAAE,IAAI,EACb,KAAK,EAAE,KAAK,GACb;;AAED,AAAA,OAAO,CAAC,CAAC,CAAC,EACR,KAAK,EAAE,KAAK,EACZ,OAAO,EAAE,MAAM,EACf,eAAe,EAAE,IAAI,EACrB,OAAO,EAAE,CAAC,EACV,SAAS,EAAE,GAAG,EACd,WAAW,EAAE,GAAG,EAChB,aAAa,EAAE,KAAK,GACrB;;AAED,AAAA,OAAO,CAAC,YAAY,CAAC,EACnB,gBAAgB,EAAE,OAAO,GAC1B;;AAED,AAAA,YAAY,CAAC,EACX,KAAK,EAAE,OAAO,EACd,OAAO,EAAE,GAAG,EACZ,aAAa,EAAE,GAAG,EAClB,SAAS,EAAE,MAAM,GAClB"
+}

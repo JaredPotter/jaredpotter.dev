@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic");
 
 * {
-  /* font-family: "Source Sans Pro", Helvetica, sans-serif; */
-  font-family: medium-marketing-display-font;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  // font-family: medium-marketing-display-font;
   box-sizing: border-box;
 }
 
@@ -14,6 +14,8 @@ body {
 
 .header {
   background-color: #05767a;
+  height: 7.5em;
+  display: flex;
 }
 
 .header nav {
@@ -29,8 +31,7 @@ body {
   color: white;
 }
 
-.header .blog-link-active {
-  background-color: #df919e;
+.header a {
   color: white;
   padding: 0.24em;
   text-decoration: none;
@@ -40,8 +41,13 @@ body {
   border-radius: 0.1em;
 }
 
+.header .link-active {
+  background-color: #df919e;
+}
+
 .profile-pic {
   width: 10.25em;
   padding: 2em;
   border-radius: 50%;
+  font-size: 0.25em;
 }

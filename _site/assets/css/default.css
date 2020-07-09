@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic");
+* { font-family: "Source Sans Pro", Helvetica, sans-serif; box-sizing: border-box; }
+
+body { margin: 0 0 0 0; display: flex; flex-direction: column; }
+
+.header { background-color: #05767a; height: 7.5em; display: flex; }
+
+.header nav { display: flex; align-items: center; }
+
+.header nav a { display: flex; align-items: center; text-decoration: none; outline: none; color: white; }
+
+.header a { color: white; padding: 0.24em; text-decoration: none; outline: 0; font-size: 2em; margin-left: 2em; border-radius: 0.1em; }
+
+.header .link-active { background-color: #df919e; }
+
+.profile-pic { width: 10.25em; padding: 2em; border-radius: 50%; font-size: 0.25em; }
+
+/*# sourceMappingURL=default.css.map */
