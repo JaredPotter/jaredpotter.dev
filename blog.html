@@ -1,30 +1,32 @@
 ---
 layout: default
 permalink: /blog
+title: Blog | Jared Potter
 ---
 
-<!-- <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog - Jared Potter</title>
-    <link rel="stylesheet" href="blogGlobal.css" />
-    <link rel="stylesheet" href="/blog/blog.css" />
-  </head>
-  <body class="container">
-
-  </body>
-  <script src="/blog/blog.js"></script>
-</html> -->
-
 {% include defaultNavigation.html %}
-<!-- <div class="blog-post-list">
-  <ul>
-    <li>
-      <a href="./blog/my-first-blog-post.html">
-        My First Blog Post
-      </a>
-    </li>
-  </ul>
-</div> -->
+<div class="blog-list-container">
+  <div class="blog-list">
+    <h1>Latest Posts</h1>
+
+    <ul class="blog-list-element">
+      {% for post in site.posts %}
+      <li class="blog-post-card">
+        <a href="{{ post.url }}" class="post-link">
+          <h2>{{ post.title }}</h2>
+          <picture>
+            <img
+              src="{{ post.coverImage }}"
+              alt="{{  post.title }}"
+              class="blog-thumb"
+            />
+          </picture>
+          <p>
+            {{ post.excerpt }}
+          </p>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
