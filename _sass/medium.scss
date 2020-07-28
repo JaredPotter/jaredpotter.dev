@@ -5,7 +5,78 @@
   align-items: center;
 }
 
-.post-container .post {
+.article-bottom-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 720px;
+  height: 150px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 40px;
+
+  p {
+    font-size: 23px;
+  }
+
+  .share {
+    text-align: center;
+  }
+
+  .jared-potter-blurp {
+    display: flex;
+    align-items: center;
+
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      font-size: 0.25em;
+    }
+  }
+}
+
+.line {
+  margin-top: 60px;
+  width: 100%;
+  background: black;
+  height: 2px;
+}
+
+.post-footer {
+  background: #327479;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+
+  .social {
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    // margin-top: 75px;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    li a {
+      text-decoration: none;
+      color: white;
+    }
+
+    li a:hover {
+      color: #d4949f;
+    }
+
+    .label {
+      display: none;
+    }
+
+    .icon {
+      font-size: 2.5rem;
+    }
+  }
 }
 
 // ~~~~~~~~~~~~~~ MEDIUM STUFF ~~~~~~~~~~~~~~

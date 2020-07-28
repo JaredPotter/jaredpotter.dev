@@ -10,6 +10,11 @@ permalink: /blog/:title
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="/assets/css/default.css" />
     <link rel="stylesheet" href="/assets/css/medium.css" />
+    <link
+      rel="stylesheet"
+      href="/assets/css/font-awesome-4.7.0/css/font-awesome.min.css"
+      target="_blank"
+    />
   </head>
   <body>
     {% include defaultNavigation.html %}
@@ -18,6 +23,10 @@ permalink: /blog/:title
       <article class="post">
         {{ content }}
       </article>
+      <hr class="line"></hr>
+      {% include postBottom.html %}
+      <br>
+      {% include postFooter.html %}
     </div>
   </body>
 </html>
