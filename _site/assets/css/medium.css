@@ -1,6 +1,6 @@
 .post-container { display: flex; flex-direction: column; align-items: center; }
 
-.article-bottom-container { display: flex; flex-direction: column; justify-content: center; width: 720px; height: 200px; margin-top: 50px; margin-bottom: 50px; padding: 40px; }
+.article-bottom-container { display: flex; flex-direction: column; justify-content: center; width: 720px; margin-top: 50px; margin-bottom: 50px; padding: 40px; }
 
 .article-bottom-container p { font-size: 23px; }
 
@@ -151,5 +151,8 @@ article hr:before { content: "..."; line-height: 1.4; font-style: italic; text-i
 article p span { /* leading paragraph */ padding-top: 7px; margin-right: 12px; line-height: 0.83; font-size: 66px; float: left; position: relative; display: block; font-family: medium-content-serif-font, Georgia, Cambria, "Times New Roman", Times, serif; }
 
 article p a { background-position: 0 calc(1em + 1px); background-size: 1px 1px; text-decoration: none; text-decoration: underline; color: inherit; font-family: medium-content-serif-font, Georgia, Cambria, "Times New Roman", Times, serif; -webkit-tap-highlight-color: transparent; }
+
+/* ~~~~~~~~~~~ MOBILE FRIENDLY STYLES ~~~~~~~~~~~~ */
+@media screen and (max-width: 980px) { /* MEDIUM STUFF */ article .full-image, article .medium-image { width: 100%; } article section, article .small-image { width: 100%; padding-left: 24px; padding-right: 24px; } /* JEKYLL STUFF */ .article-bottom-container { width: 100%; padding-left: 24px; padding-right: 24px; padding-top: 0px; padding-bottom: 0px; height: 100%; margin-top: 25px; margin-bottom: 25px; } .article-bottom-container .jared-potter-blurp { flex-direction: column; align-items: center; } }
 
 /*# sourceMappingURL=medium.css.map */

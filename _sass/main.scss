@@ -26,15 +26,16 @@ li {
 /* ~~~~~~~~~~~~ HEADER ~~~~~~~~~~~~ */
 
 .header {
-  background-color: #08c5cb;
+  background-color: #07a6ac;
   height: 100%;
   text-align: right;
   background-attachment: scroll, fixed;
-  background-image: url(/assets/images/overlay.png),
-    url(/assets/images/background.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/assets/images/overlay.png), url(/assets/images/background.jpg);
+  // background: url(/assets/images/background.jpg);
   background-size: auto, auto 100%;
   background-repeat: repeat, no-repeat;
-
+  opacity: 1.5;
   padding: 8em 4em 0 0;
   width: 35%;
   position: fixed;
@@ -52,12 +53,22 @@ li {
   margin-bottom: 1.25em;
 }
 
+// .header nav {
+//   display: fixed;
+//   left: 0px;
+//   flex-direction: column;
+//   align-items: flex-end;
+//   width: 100px;
+//   // text-align: left;
+// }
+
 .header nav a {
   border-radius: 0.1em;
   color: white;
   padding: 0.24em;
   transition: all 0.3s ease-in-out 0s;
-  border-bottom: 0.01em dotted #df919e;
+  border: 0.01em dotted #df919e;
+  text-align: center;
 }
 
 .header nav a:hover {
@@ -212,15 +223,17 @@ textarea {
     width: 100%;
     text-align: center;
     padding: 6em 4em;
+    padding-bottom: 0px;
 
     background-attachment: scroll;
-    background-image: url(/assets/images/overlay.png),
-      url(/assets/images/background.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(/assets/images/overlay.png), url(/assets/images/background.jpg);
     background-position: center top;
-    background-repeat: repeat, no-repeat;
+    background-repeat: repeat, repeat;
     background-size: auto, cover;
     background-size: cover;
     background-position: 50% -100px;
+    background-color: #07a6ac;
   }
 
   .main {

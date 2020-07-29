@@ -21,7 +21,7 @@
     <a
       href="/blog"
       
-      class="link-active"
+      class="link-active nav-item"
       
       >Blog</a
     >
@@ -29,11 +29,84 @@
     <a
       href="/uses"
       
+      class="nav-item"
+      
       >Uses</a
     >
     
+    <div class="mobile-menu-button">
+      <button onclick="toggleMenu()">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-menu"
+          width="72"
+          height="72"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="#ffffff"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" />
+          <line x1="4" y1="8" x2="20" y2="8" />
+          <line x1="4" y1="16" x2="20" y2="16" />
+        </svg>
+      </button>
+    </div>
+    <div class="mobile-menu">
+      <div class="mobile-menu-button">
+        <button onclick="toggleMenu()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-menu"
+            width="72"
+            height="72"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#ffffff"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" />
+            <line x1="4" y1="8" x2="20" y2="8" />
+            <line x1="4" y1="16" x2="20" y2="16" />
+          </svg>
+        </button>
+      </div>
+      
+      <a
+        href="/blog"
+        
+        class="link-active nav-item"
+        
+        >Blog</a
+      >
+      
+      <a
+        href="/uses"
+        
+        class="nav-item"
+        
+        >Uses</a
+      >
+      
+    </div>
   </nav>
 </header>
+
+<script>
+  function toggleMenu() {
+    const mobileMenuElement = document.querySelector(".mobile-menu");
+
+    if (!mobileMenuElement.style.display) {
+      mobileMenuElement.style.display = "flex";
+    } else {
+      mobileMenuElement.style.display = "";
+    }
+  }
+</script>
 
 <div class="blog-list-container">
   <div class="blog-list">

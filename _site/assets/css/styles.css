@@ -11,13 +11,13 @@ a:hover { color: #df919e; }
 li { list-style: none; }
 
 /* ~~~~~~~~~~~~ HEADER ~~~~~~~~~~~~ */
-.header { background-color: #08c5cb; height: 100%; text-align: right; background-attachment: scroll, fixed; background-image: url(/assets/images/overlay.png), url(/assets/images/background.jpg); background-size: auto, auto 100%; background-repeat: repeat, no-repeat; padding: 8em 4em 0 0; width: 35%; position: fixed; left: 0; top: 0; }
+.header { background-color: #07a6ac; height: 100%; text-align: right; background-attachment: scroll, fixed; background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/images/overlay.png), url(/assets/images/background.jpg); background-size: auto, auto 100%; background-repeat: repeat, no-repeat; opacity: 1.5; padding: 8em 4em 0 0; width: 35%; position: fixed; left: 0; top: 0; }
 
 .profile-pic { width: 6.25em; border-radius: 50%; }
 
 .header h1 div, .header h1 nav { margin-bottom: 1.25em; }
 
-.header nav a { border-radius: 0.1em; color: white; padding: 0.24em; transition: all 0.3s ease-in-out 0s; border-bottom: 0.01em dotted #df919e; }
+.header nav a { border-radius: 0.1em; color: white; padding: 0.24em; transition: all 0.3s ease-in-out 0s; border: 0.01em dotted #df919e; text-align: center; }
 
 .header nav a:hover { background-color: #df919e; }
 
@@ -70,6 +70,6 @@ textarea { width: 100%; margin-bottom: 1.25em; }
 .form-and-info ul li h3:before { margin-right: 0.25em; }
 
 /* ~~~~~~~~~~~ MOBILE FRIENDLY STYLES ~~~~~~~~~~~~ */
-@media screen and (max-width: 980px) { .container { display: flex; flex-direction: column; } .header { left: auto; top: auto; position: relative; width: 100%; text-align: center; padding: 6em 4em; background-attachment: scroll; background-image: url(/assets/images/overlay.png), url(/assets/images/background.jpg); background-position: center top; background-repeat: repeat, no-repeat; background-size: auto, cover; background-size: cover; background-position: 50% -100px; } .main { margin: 0; padding: 6em 4em; width: 100%; padding-bottom: 2em; } .form-and-info { flex-direction: column; } form { width: 100%; margin-bottom: 1.25em; } .form-and-info ul { padding-left: 0; } .footer { background-color: #1f1815; background-attachment: scroll; background-image: url(images/overlay.png), url(images/background.jpg); background-position: center top; background-repeat: repeat, no-repeat; background-size: auto, cover; bottom: auto; left: auto; position: relative; padding: 4em 4em 6em 4em; text-align: center; width: 100%; } .footer .social { justify-content: center; } }
+@media screen and (max-width: 980px) { .container { display: flex; flex-direction: column; } .header { left: auto; top: auto; position: relative; width: 100%; text-align: center; padding: 6em 4em; padding-bottom: 0px; background-attachment: scroll; background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/images/overlay.png), url(/assets/images/background.jpg); background-position: center top; background-repeat: repeat, repeat; background-size: auto, cover; background-size: cover; background-position: 50% -100px; background-color: #07a6ac; } .main { margin: 0; padding: 6em 4em; width: 100%; padding-bottom: 2em; } .form-and-info { flex-direction: column; } form { width: 100%; margin-bottom: 1.25em; } .form-and-info ul { padding-left: 0; } .footer { background-color: #1f1815; background-attachment: scroll; background-image: url(images/overlay.png), url(images/background.jpg); background-position: center top; background-repeat: repeat, no-repeat; background-size: auto, cover; bottom: auto; left: auto; position: relative; padding: 4em 4em 6em 4em; text-align: center; width: 100%; } .footer .social { justify-content: center; } }
 
 /*# sourceMappingURL=styles.css.map */

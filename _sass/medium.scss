@@ -10,7 +10,7 @@
   flex-direction: column;
   justify-content: center;
   width: 720px;
-  height: 200px;
+  // height: 200px;
   margin-top: 50px;
   margin-bottom: 50px;
   padding: 40px;
@@ -568,5 +568,40 @@ article {
     font-family: medium-content-serif-font, Georgia, Cambria, "Times New Roman",
       Times, serif;
     -webkit-tap-highlight-color: transparent;
+  }
+}
+
+/* ~~~~~~~~~~~ MOBILE FRIENDLY STYLES ~~~~~~~~~~~~ */
+@media screen and (max-width: 980px) {
+  /* MEDIUM STUFF */
+  article {
+    .full-image,
+    .medium-image {
+      width: 100%;
+    }
+
+    section,
+    .small-image {
+      width: 100%;
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+  }
+
+  /* JEKYLL STUFF */
+  .article-bottom-container {
+    width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height: 100%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+    .jared-potter-blurp {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 }
